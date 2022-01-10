@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", () => {
   cardArray.sort(() => 0.5 - Math.random());
   // -- MES VARIABLES -- //
   const grid = document.querySelector(".memory__game-grid");
+  var cardsChosen = [];
+  var cardsChosenId = [];
 
   // Function créant mon tableau de jeu avec des cartes vierges
   function createBoard() {
@@ -24,12 +26,33 @@ document.addEventListener("DOMContentLoaded", () => {
       card.setAttribute("class", "memory__game-img-size");
 
       // J'ajoute une évenemnt click sur chacunes de mes balises <img> qui executera la function "flipCard"
-      // card.addEventListener("click", flipCard);
+      card.addEventListener("click", flipCard);
 
       //
       grid.appendChild(card);
     }
   }
 
+  function flipCard() {
+    // Je récupère le "data-id" de la balise <img> selectionné
+    let cardId = this.getAttribute("data-id");
+
+    // Je pousse dans mon tableau "cardsChoosen" le nom de la carte selectionné
+    cardsChosen.push(cardArray[cardId].name);
+
+    // Je pousse dans le tableau "cardsChosenId" le "data-id" de la balise <img> selectionné
+    cardsChosenId.push(cardId);
+
+    // J'attribue à la carte séléctionné, la source de l'image qui lui correspond
+    this.setAttribute("src", cardArray[cardId].img);
+    this.removeEventListener("click", flipCard);
+
+    // Si le tableau "cardsChoosen" contient 2 élements, alors j'execute la function "checkForMatch" qui mettra 0.5secondes à s'éxecuter
+    if (cardsChosen.length === 2) {
+      setTimeout(checkForMatch, 500);
+    }
+  }
+
+  // J'appelle ma fonction createBoard pour instancier le plateau de jeu
   createBoard();
 });
