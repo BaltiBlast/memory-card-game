@@ -6,6 +6,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const grid = document.querySelector(".memory__game-grid");
   var cardsChosen = [];
   var cardsChosenId = [];
+  const cardsWon = [];
+
+  // Message pour bonnes cartes
+  function pairWin() {
+    document.querySelector(
+      ".memory__game-reactions"
+    ).innerHTML = `<p class="memory__game-reactions-positive">${
+      arrayOfGlory[Math.floor(Math.random() * arrayOfGlory.length)]
+    }</p>`;
+  }
+
+  // Message pour mauvaises cartes
+  function pairLoose() {
+    document.querySelector(
+      ".memory__game-reactions"
+    ).innerHTML = `<p class="memory__game-reactions-negativ">${
+      arrayOfShame[Math.floor(Math.random() * arrayOfGlory.length)]
+    }</p>`;
+  }
 
   // Function créant mon tableau de jeu avec des cartes vierges
   function createBoard() {
@@ -31,6 +50,52 @@ document.addEventListener("DOMContentLoaded", () => {
       //
       grid.appendChild(card);
     }
+  }
+
+  function checkForMatch() {
+    // Je récupère toutes mes balises <img> et les stock dans une variable
+    let cards = document.querySelectorAll("img");
+
+    // Je stock dans une variable l'id de ma première carte selectionné au sein du tableau "cardsChosenId"
+    const optionOneId = cardsChosenId[0];
+
+    // Je stock dans une variable l'id de ma deuxième carte selectionné au sein du tableau "cardsChosenId"
+    const optionTwoId = cardsChosenId[1];
+
+    // -- LA CONDITION -- //
+    // 1. Si l'id de ma première carte correspond à l'id de ma deuxième carte alors//
+    if (cardsChosen[0] === cardsChosen[1]) {
+      // 2. J'execute le message pour le combo gagnant
+      pairWin();
+
+      // 3. Je remplace les "src" des balises <img> concernées
+      cards[optionOneId].classList.add("memory__game-img-found");
+      cards[optionTwoId].classList.add("memory__game-img-found");
+
+      // 4. Je pousse dans mon tableau "cardsWon" le combo gagnant
+      cardsWon.push(cardsChosen);
+    } else {
+      // -- SINON -- //
+      // 5. J'attribue à nouveau la valeur par défaut de ces dernières
+      cards[optionOneId].setAttribute(
+        "src",
+        "./assets/images/point-interrogation.png"
+      );
+      cards[optionTwoId].setAttribute(
+        "src",
+        "./assets/images/point-interrogation.png"
+      );
+
+      cards[optionOneId].addEventListener("click", flipCard);
+      cards[optionTwoId].addEventListener("click", flipCard);
+
+      // 6. Puis j'execute le message pour le combo perdant
+      pairLoose();
+    }
+
+    // Je vide mes tableaux contenant les informatiosn des cartes séléctionnées
+    cardsChosen = [];
+    cardsChosenId = [];
   }
 
   function flipCard() {

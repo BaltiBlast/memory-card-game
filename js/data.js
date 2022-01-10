@@ -45,7 +45,6 @@ const arrayOfGlory = [
   "Je l'avais vue depuis le début celle ci. Je dis ça comme ça..",
   "J'ai failli attendre !",
   "Hey pas mal ! Ca change de d'habitude..",
-  "Bah c'est pas dommage !"
 ];
 
 // Messages en cas d'échec
