@@ -6,6 +6,10 @@
   background-color: white;
   border-radius: 12px;
   text-align: center;
+  box-shadow: 0px 0px 6px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .memory__game-modal {
@@ -18,7 +22,18 @@
 
 .memory__game--modal-title {
   font-size: 35px;
+  padding: 25px 25px 0 25px;
+}
+
+.memory__game-modal-paragraph {
   padding: 25px;
+  font-size: 18px;
+}
+
+.memory__game-button-start {
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
 }
 
 .memory__game-body {

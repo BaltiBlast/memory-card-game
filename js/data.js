@@ -49,7 +49,7 @@ const arrayOfGlory = [
 
 // Messages en cas d'échec
 const arrayOfShame = [
-  "C'est pas térrible..",
+  "C'est pas terrible..",
   "C'est rageant hein ? ",
   "MOUUUUAIS",
   "Tu penses vraiment t'en sortir comme ça ?",
