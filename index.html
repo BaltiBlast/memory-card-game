@@ -19,13 +19,33 @@
 
     <!-- JS DATA IMPORT -->
     <script src="./js/data.js"></script>
+    <script src="./js/utils.js"></script>
 
     <title>Memory Card Game</title>
   </head>
-  <body class="body">
+  <body class="memory__game-body blur">
+    <!-- DEBUT DE PARTIE -->
+    <div class="memory__game-modal">
+      <div class="memory__game-modal-content">
+        <h2 class="memory__game--modal-title">
+          Test technique pour O'clock - Fougeray Florian
+        </h2>
+        <p>
+          Vous disposez de 3 minutes pour découvrir toutes les cartes et gagner
+          la partie !
+        </p>
+        <p>Prêt ? Alors c'est parti !</p>
+        <button class="memory__game-button-start">Start</button>
+      </div>
+    </div>
+
+    <!-- PAGE PENDANT LA PARTIE -->
     <h1 class="memory__game-title">Kaamelott Memory Game</h1>
     <div class="memory__game-reactions"></div>
     <script src="./js/game.js"></script>
     <div class="memory__game-grid"></div>
+    <div class="memory__game-progress-bar">
+      <div class="memory__game-bar"></div>
+    </div>
   </body>
 </html>
