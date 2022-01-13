@@ -115,8 +115,22 @@ Hey ? Tu sais quoi ? J'ai une bonne nouvelle. Si tu es arrivé jusqu'ici, tu n'a
 > `$ npm run start`
 
 Dans ton terminal pour lancer ton server local !
-Pas d'erreur de message d'erreur ? Alors félicitation ! Nous venons d'initialiser notre back-end 😀
+Pas d'erreur de message d'erreur ? Alors félicitation ! Nous venons d'initialiser notre back-end et de lancer notre server en local 😀
 
+## Jeu et instructions !
+
+#### Règles
+Jeu de mémory card, le principe étant d'avoir un plateau de jeu avec toutes nos cartes face cachées. Le but ? Que la personne deriière son écran puisse trouver toutes les paires identiques !
+
+Nous disposons de 14 cartes différentes, pour un plateau total de 28 cartes.
+
+Si les cartes séléctionnées par le joueur son identique, alors nous les enlevons de notre plateau de jeu.
+Si les cartes séléctionnées par le joueur sont différente, alors nous les retournons face caché.
+
+Si toutes les cartes ont étaient découvertes, alors la partie est gagnée ! 🥳
+En cas contraire.. Le joueur aura perdu.. Et oui ! C'est la vie ! Mais rien ne l'empêche de reccomencer, autan de fois qu'il le souhaite 🥰
+
+Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réaliser un nouveau record, souhaitons lui bonne chance 😺 !
 
 
 
