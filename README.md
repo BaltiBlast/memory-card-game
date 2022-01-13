@@ -154,7 +154,7 @@ Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réalise
 
 ### En cas de défaite
 
-![Uploading game-defeat.png…]()
+![game-defeat](https://user-images.githubusercontent.com/49390735/149346271-69587040-ba5e-450f-9606-abb98c5909dd.png)
 
 ## Documentation des ressources utiliées
 ### <ins>Elements déclaratifs</ins>
