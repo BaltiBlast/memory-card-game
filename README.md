@@ -132,7 +132,29 @@ En cas contraire.. Le joueur aura perdu.. Et oui ! C'est la vie ! Mais rien ne l
 
 Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réaliser un nouveau record, souhaitons lui bonne chance 😺 !
 
+### Jeu avant son lancement sans scores encore enregistré
 
+![before-start-game](https://user-images.githubusercontent.com/49390735/149343207-502d26d2-378e-49e9-8099-c98e04820bde.png)
+
+### Jeu avant son lancement avec des scores enregistrés
+
+![before-start-game-with-scores](https://user-images.githubusercontent.com/49390735/149344048-0bc35537-9682-429c-96fd-7bf63336b0ba.png)
+
+### Plateau de jeu à son lancement
+
+![game-started](https://user-images.githubusercontent.com/49390735/149343388-84ccb61d-29ce-41be-b431-37c51c91ef3c.png)
+
+### Plateau de jeu pendant la partie
+
+![game-ongoing](https://user-images.githubusercontent.com/49390735/149343494-4050c804-ea60-45cc-a06d-9079a8265c19.png)
+
+### En cas de victoire
+
+![game-victory](https://user-images.githubusercontent.com/49390735/149346028-1b39272c-35bf-4436-b45c-86fb051a8124.png)
+
+### En cas de défaite
+
+![Uploading game-defeat.png…]()
 
 ## Documentation des ressources utiliées
 ### <ins>Elements déclaratifs</ins>
