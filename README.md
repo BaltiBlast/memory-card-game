@@ -110,7 +110,12 @@ Les étapes :
 - Ajoutons "db.js" qui importera nos données de connexion ainsi que les données pour notre server local
 - Puis, "config.js" dans lequel nous déclarons nos variables qui contiendrons nos informations de connexion de BBD + server local
 
-Hey ? Tu suis toujours ? Si c'est bon pour toi, alors la suite est par là !
+Hey ? Tu sais quoi ? J'ai une bonne nouvelle. Si tu es arrivé jusqu'ici, tu n'auras plus qu'à faire
+
+> `$ npm run start`
+
+Dans ton terminal pour lancer ton server local !
+Pas d'erreur de message d'erreur ? Alors félicitation ! Nous venons d'initialiser notre back-end 😀
 
 
 
