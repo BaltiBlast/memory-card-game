@@ -97,15 +97,21 @@ Vous pouvez les copier coller sur un bloc note si vous voulez. Mais nous pouvons
 On va commencer par structurer notre projet, on aime quand tout est bien rangé !
 
 Les étapes : 
-- À la racine du projet, créons le ".env" qui contiendra nos informations de connexion à la BDD et de notre server local
+1) A la racine du projet :
+- Créons notre ".env" qui contiendra nos informations de connexion à la BDD et de notre server local
+- Créons "server.js" qui nous permettra de lancer notre server local afin de tester nos requêtes 
 - Créons un dossier "back-end" dans notre projet
-- Dans le dossier "back-end" on va créer les dossiers "controllers", "models" et "routes"
+
+2) Dans le dossier Back-end :
+- Ajoutons les dossiers "controllers", "models" et "routes"
 - Dans le dossier "controllers", nous aurons les controllers
 - Dans le dossier "models" les models ( évidemment )
-
-- Dans le dossier "routes" .... Roulement de tambours... Les routes ! Tu es perspicace, j'aime ça :eyes:
+- Dans le dossier "routes" .... Roulement de tambours... Les routes ! Tu es perspicace, j'aime ça 🔥
+- Ajoutons "db.js" qui importera nos données de connexion ainsi que les données pour notre server local
+- Puis, "config.js" dans lequel nous déclarons nos variables qui contiendrons nos informations de connexion de BBD + server local
 
 Hey ? Tu suis toujours ? Si c'est bon pour toi, alors la suite est par là !
+
 
 
 
