@@ -92,8 +92,24 @@ Vous pouvez les copier coller sur un bloc note si vous voulez. Mais nous pouvons
 
 ![connexion-information](https://user-images.githubusercontent.com/49390735/149327060-ceb4cebd-0f84-44b8-89df-5584334127f5.png)
 
-## Documentation des ressources utiliées
+## On commence le code ? Ca vous tente ? Allez !
+### Structuration
+On va commencer par structurer notre projet, on aime quand tout est bien rangé !
 
+Les étapes : 
+- À la racine du projet, créons le ".env" qui contiendra nos informations de connexion à la BDD et de notre server local
+- Créons un dossier "back-end" dans notre projet
+- Dans le dossier "back-end" on va créer les dossiers "controllers", "models" et "routes"
+- Dans le dossier "controllers", nous aurons les controllers
+- Dans le dossier "models" les models ( évidemment )
+
+- Dans le dossier "routes" .... Roulement de tambours... Les routes ! Tu es perspicace, j'aime ça :eyes:
+
+Hey ? Tu suis toujours ? Si c'est bon pour toi, alors la suite est par là !
+
+
+
+## Documentation des ressources utiliées
 ### <ins>Elements déclaratifs</ins>
 
 - let : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/let
