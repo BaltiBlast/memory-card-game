@@ -55,6 +55,7 @@ Allez op ! On va sur Firebase : https://firebase.google.com/
 
 Pour commencer, on va se connecter (ou s'inscrire) directement avec notre compte google ! Les choses sont biens faites n'est-ce pas ? :innocent:
 Firebase est un service gérer par Google, autant te dire que ça y va fort :punch:
+![signin-firbase](https://user-images.githubusercontent.com/49390735/149325840-5af41617-f2c8-4c28-b604-27758dce494a.png)
 
 #### Le projet
 
