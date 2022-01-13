@@ -1,19 +1,3 @@
-// ------------------------------------------------------------------------------------------------------------ //
-// Ressources utilisées sur cette page
-// -----
-// function() -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function
-// array -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
-// Interpolation de variable -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Template_literals
-// -----
-// .sort() -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/sort
-// .Math.random() -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-// .Math.floor -> https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Math/floor
-// .querySelector() -> https://developer.mozilla.org/fr/docs/Web/API/Document/querySelector
-// .addEventListener() -> https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
-// -----
-// innerHTML -> https://developer.mozilla.org/fr/docs/Web/API/Element/innerHTML
-
-// ------------------------------------------------------------------------------------------------------------ //
 // -- REACTION POUR BONNE PAIRE -- //
 
 // Ici, nous déclarons une (function) qui nous permettra d'afficher un message de manière aléatoire si la personne qui joue trouve une paire de carte valide.
