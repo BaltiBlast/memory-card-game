@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.6.0",
+    "express": "^4.17.2",
+    "firebase": "^8.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "memory-card-game",
+  "description": "Test technique école O'clock - Fougeray Florian",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BaltiBlast/memory-card-game.git"
+  },
+  "author": "Fougeray Florian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BaltiBlast/memory-card-game/issues"
+  },
+  "homepage": "https://github.com/BaltiBlast/memory-card-game#readme"
+}

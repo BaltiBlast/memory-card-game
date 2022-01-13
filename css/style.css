@@ -1,15 +1,33 @@
-/* -- STYLE POUR LA MODAL -- */
+/* ------------------------------------------------------------------------------------------------------------ */
+/* VARIABLE CSS */
+:root {
+  --black: black;
+  --white: white;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* -- MODAL -- */
+
+.memory__game-modal {
+  position: fixed;
+}
 
 .memory__game-modal-content {
   width: 800px;
   height: 400px;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 12px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  box-shadow: 0px 0px 5px var(--black);
 }
 
-.memory__game-modal {
-  position: fixed;
+.memory__game-modal-scores {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 12px 0;
 }
 
 .memory__game-modal-display {
@@ -21,6 +39,10 @@
   padding: 25px;
 }
 
+/* ------------------------------------------------------------------------------------------------------------ */
+/* -- PLATEAU DE JEU -- */
+
+/* La page contenant notre application */
 .memory__game-body {
   height: 100vh;
   width: 100vw;
@@ -32,12 +54,7 @@
   background-size: cover;
 }
 
-.memory__game-title {
-  font-family: "MedievalSharp", cursive;
-  font-size: 55px;
-  color: white;
-}
-
+/* Notre plateau de jeu */
 .memory__game-grid {
   width: 728px;
   height: 416px;
@@ -49,24 +66,37 @@
   background-position: center;
 }
 
+/* Le titre au dessus de notre plateau de jeu */
+.memory__game-title {
+  font-family: "MedievalSharp", cursive;
+  font-size: 55px;
+  color: white;
+}
+
+/* Image qui se découvre en fin de partie */
 .memory__game-img-size {
   width: 100px;
   height: 100px;
-  border: solid 1px black;
+  border: solid 1px var(--black);
   margin: 1px;
   border-radius: 12px;
 }
 
+/* On cache les images trouvé */
 .memory__game-img-found {
   visibility: hidden;
 }
 
+/* ------------------------------------------------------------------------------------------------------------ */
+/* BARRE DE REACTION */
+
+/*  */
 .memory__game-reactions {
   height: 30px;
   width: 728px;
   border-radius: 4px;
   background-color: rgba(250, 250, 250, 0.7);
-  color: white;
+  color: var(--white);
   font-size: 20px;
   font-weight: bold;
   display: flex;
@@ -74,19 +104,23 @@
   justify-content: center;
 }
 
+/* Couleur pour bonne réponse */
 .memory__game-reactions-positive {
   color: #00561b;
 }
 
+/* Couleur pour mauvaise réponse */
 .memory__game-reactions-negativ {
   color: #f00020;
 }
 
+/* Container de la barre de temps */
 .memory__game-progress-bar {
   height: 26px;
   width: 728px;
 }
 
+/* Barre dégressive */
 .memory__game-bar {
   width: 100%;
   height: 100%;
@@ -94,6 +128,9 @@
   animation: countdown linear;
   border-radius: 4px;
 }
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* -- ANIMATION -- */
 
 @keyframes countdown {
   0% {
