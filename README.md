@@ -68,16 +68,29 @@ Suivons les étapes suivantes :
 ![add-project](https://user-images.githubusercontent.com/49390735/149326010-9e519776-dce7-4305-aa1a-06a8ed8f6658.png)
 
 - Donnons un nom à notre projet
+
+![name-project](https://user-images.githubusercontent.com/49390735/149326698-be3115b8-9184-4c81-a93a-95899ccf051f.png)
+
 - On désactive les Google analytics, nous ne souhaitons pas déployer notre site aujourd'hui, ils ne seront donc pas utiles !
+
+![google-analytics-off](https://user-images.githubusercontent.com/49390735/149326781-f8a5e8a9-0bad-4507-a437-2a61fbc04ed7.png)
+
 - Et op, on créer le projet.
 
 Ayez ? C'est fait ? On perd pas le fil alors ! La suite est par là :
 
 - Ajoutons firebase à notre projet web en cliquant sur l'icone " </> "
+
+![add-firebase](https://user-images.githubusercontent.com/49390735/149326849-981a3807-c4c2-489f-a3f7-a5ff98f7da76.png)
+
 - Nous lui attribuons un nom ( dans mon cas, j'utilise le même que mon projet )
+
+![name-web-project](https://user-images.githubusercontent.com/49390735/149326922-cec2ebe5-6c9f-4b96-b253-9e60e2c18780.png)
 
 Oh ? On dirait bien que nous avons nos informations de connection du projet ! :yellow_heart:
 Vous pouvez les copier coller sur un bloc note si vous voulez. Mais nous pouvons également y accéder plus tard à travers les options du projet, pas d'inquiètude :blush:
+
+![connexion-information](https://user-images.githubusercontent.com/49390735/149327060-ceb4cebd-0f84-44b8-89df-5584334127f5.png)
 
 ## Documentation des ressources utiliées
 
