@@ -2,11 +2,38 @@
 
 Aujourd'hui on part sur un projet for() sympathique ! ( "for()" ahahah. T'as compris hein ? :relieved: )
 
-Création d'un petit jeu de Memory Card sur le thème de Kaamelott.
+Création d'un petit jeu de Memory Card sur le thème de Kaamelott entièrement en JS Vanilla
 Tout le code est commenté pour que tu puisses comprendre apprendre dans les meileures conditions.
 
 Mais en cas de besoin.. <br>
 Toute la documentation des ressources utilisées dans ce projet sont disponible à la fin de ce Readme, alors n'hésitez pas à les consulter en cas de besoin ! :wink:
+
+## Mise en place de notre Back
+
+Nous allons enregistrer les temps de nos fabuleux joueurs. Jouer c'est sympa, si on y rajoute un peu de compétition, ça peut être intéréssant ! :smiling_imp:
+
+### Installation de nos packages
+
+Nous pouvons ouvrir un terminal ! ( ctrl + alt + t Tu me remerciera plus tard :smirk: )
+
+Puis nous copie collerons les lignes suivantes :
+
+> npm install express firbase dotenv cors body-parser
+
+- Express nous permettra de gérer notre back pour la communication avec la BDD (Base De Données)
+- Firebase est le package de notre BDD créé sur Firebase
+- dotenv pourra nous permettre d'interpreter notre fichier ".env" dans lequel nous stockerons nos informations de connexion à notre BDD
+- cors s'occupera des authorisations de transfert entre nos échanges de données
+- body-parser nous permettra d'analyser le corps de nos requêtes entrantes
+
+> npm install nodemon --save-dev
+
+- nodemon nous servira à relancer automatiquement notre server local à chaque fois que nous enregistrons une modification au lieu de le relancer manuellement à chaque modifications
+- "-dev" nous permet de spécifier que nous souhaite l'utiliser uniquement en développement. En cas de déploiement, nous ne souhaitons pas le mettre en place !
+
+Les ressources sont prêtes ? Tu es prêt également ? Créons la base ! :heart_eyes:
+
+### Firebase
 
 ## Documentation des ressources utiliées
 
