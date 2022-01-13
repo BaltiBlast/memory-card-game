@@ -3,10 +3,10 @@
 Aujourd'hui on part sur un projet for() sympathique ! ( "for()" ahahah. T'as compris hein ? :relieved: )
 
 Création d'un petit jeu de Memory Card sur le thème de Kaamelott entièrement en JS Vanilla
-Tout le code est commenté pour que tu puisses comprendre apprendre dans les meileures conditions.
+Tout le code est commenté pour que tu puisses comprendre et apprendre dans les meileures conditions.
 
 Mais en cas de besoin.. <br>
-Toute la documentation des ressources utilisées dans ce projet sont disponible à la fin de ce Readme, alors n'hésitez pas à les consulter en cas de besoin ! :wink:
+Toute la documentation des ressources utilisées dans ce projet est disponible à la fin de ce Readme, alors n'hésitez pas à les consulter en cas de besoin ! :wink:
 
 ## Mise en place de notre Back
 
@@ -30,31 +30,32 @@ Les étapes à suivre :
 
 > `$cd nomDeMonProjet`
 
-Puis nous copie collerons les lignes suivantes :
+Puis copie - colle les lignes suivantes :
 
-> `$npm install express firbase dotenv cors body-parser`
+> `$npm install express firebase dotenv cors body-parser`
 
-- Express nous permettra de gérer notre back pour la communication avec la BDD (Base De Données)
-- Firebase est le package de notre BDD créé sur Firebase
-- dotenv pourra nous permettre d'interpreter notre fichier ".env" dans lequel nous stockerons nos informations de connexion à notre BDD
-- cors s'occupera des authorisations de transfert entre nos échanges de données
-- body-parser nous permettra d'analyser le corps de nos requêtes entrantes
+- `express` nous permettra de gérer notre back pour la communication avec la BDD (Base De Données)
+- `firebase` est le package de notre BDD créée sur Firebase
+- `dotenv` pourra nous permettre d'interpreter notre fichier ".env" dans lequel nous stockerons nos informations de connexion à notre BDD
+- `cors` s'occupera des autorisations de requêtes entre le server et notre application
+- `body-parser` nous permettra d'analyser le corps de nos requêtes entrantes
 
 > `$npm install nodemon --save-dev`
 
-- nodemon nous servira à relancer automatiquement notre server local à chaque fois que nous enregistrons une modification au lieu de le relancer manuellement à chaque modifications
-- "-dev" nous permet de spécifier que nous souhaite l'utiliser uniquement en développement. En cas de déploiement, nous ne souhaitons pas le mettre en place !
+- `nodemon` nous servira à relancer automatiquement notre serveur local à chaque fois que nous enregistrons une modification au lieu de le relancer manuellement à chaque modifications
+- `-dev` nous permet de spécifier que nous souhaite l'utiliser uniquement en développement. En cas de déploiement, il ne sera pas pris en compte !
 
 Les ressources sont prêtes ? Tu es prêt également ? Créons la base ! :heart_eyes:
 
 ### Firebase
 
-Allez op ! On va sur Firebase : https://firebase.google.com/
+Allez hop ! On va sur Firebase : https://firebase.google.com/
 
 ##### Connexion
 
-Pour commencer, on va se connecter (ou s'inscrire) directement avec notre compte google ! Les choses sont biens faites n'est-ce pas ? :innocent:
-Firebase est un service gérer par Google, autant te dire que ça y va fort :punch:
+Pour commencer, on va se connecter (ou s'inscrire) directement avec notre compte google ! Les choses sont biens faite n'est-ce pas ? :innocent:
+Firebase est un service géré par Google, autant te dire que ça y va fort :punch:
+
 ![signin-firbase](https://user-images.githubusercontent.com/49390735/149325840-5af41617-f2c8-4c28-b604-27758dce494a.png)
 
 #### Le projet
@@ -75,9 +76,9 @@ Suivons les étapes suivantes :
 
 ![google-analytics-off](https://user-images.githubusercontent.com/49390735/149326781-f8a5e8a9-0bad-4507-a437-2a61fbc04ed7.png)
 
-- Et op, on créer le projet.
+- Et hop, on créer le projet.
 
-Ayez ? C'est fait ? On perd pas le fil alors ! La suite est par là :
+Ayé ? C'est fait ? On perd pas le fil alors ! La suite est par là :
 
 - Ajoutons firebase à notre projet web en cliquant sur l'icone " </> "
 
@@ -92,47 +93,46 @@ Vous pouvez les copier coller sur un bloc note si vous voulez. Mais nous pouvons
 
 ![connexion-information](https://user-images.githubusercontent.com/49390735/149327060-ceb4cebd-0f84-44b8-89df-5584334127f5.png)
 
-## On commence le code ? Ca vous tente ? Allez !
+## On commence le code ? Ca vous tente ? Alleeeeeez !
 ### Structuration
 On va commencer par structurer notre projet, on aime quand tout est bien rangé !
 
 Les étapes : 
-1) A la racine du projet :
-- Créons notre ".env" qui contiendra nos informations de connexion à la BDD et de notre server local
-- Créons "server.js" qui nous permettra de lancer notre server local afin de tester nos requêtes 
-- Créons un dossier "back-end" dans notre projet
+1) À la racine du projet :
+- Créons notre `.env` qui contiendra nos informations de connexion à la BDD et de notre serveur local
+- Créons `serveur.js` qui nous permettra de lancer notre serveur local afin de tester nos requêtes 
+- Créons un dossier `back-end` dans notre projet
 
 2) Dans le dossier Back-end :
-- Ajoutons les dossiers "controllers", "models" et "routes"
-- Dans le dossier "controllers", nous aurons les controllers
-- Dans le dossier "models" les models ( évidemment )
-- Dans le dossier "routes" .... Roulement de tambours... Les routes ! Tu es perspicace, j'aime ça 🔥
-- Ajoutons "db.js" qui importera nos données de connexion ainsi que les données pour notre server local
-- Puis, "config.js" dans lequel nous déclarons nos variables qui contiendrons nos informations de connexion de BBD + server local
+- Ajoutons les dossiers `controllers`, `models` et `routes`
+- Dans le dossier `controllers`, nous aurons les controllers
+- Dans le dossier `models` les models ( évidemment )
+- Dans le dossier `routes` .... Roulement de tambours... Les routes ! Tu es perspicace, j'aime ça 🔥
+- Ajoutons `db.js` qui importera nos données de connexion ainsi que les données pour notre serveur local
+- Puis, `config.js` dans lequel nous déclarons nos variables qui contiendrons nos informations de connexion de BBD + serveur local
 
 Hey ? Tu sais quoi ? J'ai une bonne nouvelle. Si tu es arrivé jusqu'ici, tu n'auras plus qu'à faire
 
 > `$ npm run start`
 
-Dans ton terminal pour lancer ton server local !
-Pas d'erreur de message d'erreur ? Alors félicitation ! Nous venons d'initialiser notre back-end et de lancer notre server en local 😀
+Pas de message d'erreur ? Alors félicitations ! Nous venons d'initialiser notre back-end et de lancer notre serveur en local 😀
 
 ## Jeu et instructions !
 
 #### Règles
-Jeu de mémory card, le principe étant d'avoir un plateau de jeu avec toutes nos cartes face cachées. Le but ? Que la personne deriière son écran puisse trouver toutes les paires identiques !
+Jeu de memory card, le principe étant d'avoir un plateau de jeu avec toutes nos cartes face cachée. Le but ? Que la personne derrière son écran puisse trouver toutes les paires identiques !
 
 Nous disposons de 14 cartes différentes, pour un plateau total de 28 cartes.
 
-Si les cartes séléctionnées par le joueur son identique, alors nous les enlevons de notre plateau de jeu.
-Si les cartes séléctionnées par le joueur sont différente, alors nous les retournons face caché.
+Si les cartes sélectionnées par le joueur sont identiques, alors nous les enlevons de notre plateau de jeu.
+Si les cartes sélectionnées par le joueur sont différentes, alors nous les retournons face cachée.
 
-Si toutes les cartes ont étaient découvertes, alors la partie est gagnée ! 🥳
-En cas contraire.. Le joueur aura perdu.. Et oui ! C'est la vie ! Mais rien ne l'empêche de reccomencer, autan de fois qu'il le souhaite 🥰
+Si toutes les cartes ont été découvertes, alors la partie est gagnée ! 🥳
+En cas contraire.. Le joueur a perdu.. Et oui ! C'est la vie ! Mais rien ne l'empêche de recommencer, autant de fois qu'il le souhaite 🥰
 
-Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réaliser un nouveau record, souhaitons lui bonne chance 😺 !
+Le joueur dispose de 3 min pour chaque partie afin de pouvoir tenter de réaliser un nouveau record, souhaitons lui bonne chance 😺 !
 
-### Jeu avant son lancement sans scores encore enregistré
+### Jeu avant son lancement sans scores
 
 ![before-start-game](https://user-images.githubusercontent.com/49390735/149343207-502d26d2-378e-49e9-8099-c98e04820bde.png)
 
@@ -165,7 +165,7 @@ Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réalise
 - array : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array
 - function() : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/function
 
-### <ins>Function pour l'asynchrone</ins>
+### <ins>Fonction pour l'asynchrone</ins>
 
 - async function : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/async_function
 - await : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Operators/await
@@ -177,7 +177,7 @@ Le joueur disposera de 3 min à chaque partie afin de pouvoir tenter de réalise
 - if...else : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/if...else
 - try...catch : https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Statements/try...catch
 
-### <ins>Functions Javascript</ins>
+### <ins>Fonction Javascript</ins>
 
 - .addEventListener() : https://developer.mozilla.org/fr/docs/Web/API/EventTarget/addEventListener
 - "DOMContentLoaded" : https://developer.mozilla.org/fr/docs/Web/API/Window/DOMContentLoaded_event
