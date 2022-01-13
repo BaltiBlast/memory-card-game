@@ -64,6 +64,7 @@ Nous allons cliquer sur le petit onglet "Go to console" et créer notre petit pr
 Suivons les étapes suivantes :
 
 - Ajouter un projet
+
 ![add-project](https://user-images.githubusercontent.com/49390735/149326010-9e519776-dce7-4305-aa1a-06a8ed8f6658.png)
 
 - Donnons un nom à notre projet
